@@ -1,0 +1,110 @@
+{
+  "questions": [
+    {
+      "question": "What is your age?",
+      "options": [
+        "Under 18",
+        "18-24",
+        "25-34",
+        "35-44",
+        "45-54",
+        "55-64",
+        "65 and over"
+      ]
+    },
+    {
+      "question": "What is your gender?",
+      "options": [
+        "Male",
+        "Female",
+        "Non-binary",
+        "Prefer not to say",
+        "Other: ______________"
+      ]
+    },
+    {
+      "question": "What brings you to seek therapy? (Select all that apply)",
+      "options": [
+        "Anxiety",
+        "Depression",
+        "Relationship Issues",
+        "Stress Management",
+        "Trauma or PTSD",
+        "Grief and Loss",
+        "Substance Abuse",
+        "Self-esteem Issues",
+        "Other: ______________"
+      ]
+    },
+    {
+      "question": "How long have you been experiencing these issues?",
+      "options": [
+        "Less than 6 months",
+        "6 months to 1 year",
+        "1-2 years",
+        "Over 2 years"
+      ]
+    },
+    {
+      "question": "On a scale of 1 to 10, how would you rate the severity of your current mental health issues?",
+      "options": [
+        "1 = Not severe",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10 = Extremely severe"
+      ]
+    },
+    {
+      "question": "Have you received therapy before?",
+      "options": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "question": "If yes, please describe your experience:",
+      "options": [
+        "______________"
+      ]
+    },
+    {
+      "question": "What is your therapist gender preference?",
+      "options": [
+        "Male",
+        "Female",
+        "No preference"
+      ]
+    },
+    {
+      "question": "Preferred Therapy Format",
+      "options": [
+        "In-person",
+        "Online (video)",
+        "Phone sessions",
+        "Text-based therapy"
+      ]
+    },
+    {
+      "question": "How often would you like to have therapy sessions?",
+      "options": [
+        "Once a week",
+        "Twice a week",
+        "Once every two weeks",
+        "Once a month",
+        "Other: ______________"
+      ]
+    },
+    {
+      "question": "What specific goals do you hope to achieve through therapy?",
+      "options": [
+        "______________"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #F1F4EC;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+nav {
+  border-bottom: 1px solid #ccc;
+  transition: transform 0.3s ease;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Utility classes for colors */
+.bg-green-custom {
+  background-color: #8FC63F;
+}
+
+.bg-yellow-custom {
+  background-color: #DCB93E;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-black {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .md\:flex {
+    display: none;
+  }
+
+  .md\:w-3\/10, .md\:w-7\/10 { /* Correctly escaped */
+    width: 100%;
+  }
+
+  .md\:space-x-4 {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:space-x-4 {
+    margin-right: 1rem;
+  }
+}
+
+/* Modal overlay styles */
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure modal is in front of other content */
+}
+
+/* Modal content styles */
+.ReactModal__Content {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh; /* Maximum height of 80% of viewport height */
+  height: auto; /* Allow height to adjust based on content */
+  padding: 20px;
+  position: relative;
+  outline: none;
+  overflow-y: auto; /* Vertical scroll if content exceeds max-height */
+  z-index: 1001; /* Ensure modal content is in front of overlay */
+}
+
+.ReactModal__Content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.ReactModal__Content textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  min-height: 100px;
+  margin-top: 1rem;
+  resize: vertical;
+}
+
+.ReactModal__Content button {
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.ReactModal__Content button.bg-green-custom {
+  background-color: #8FC63F; /* Green for "Add Comment" button */
+  color: white;
+}
+
+.ReactModal__Content button.bg-yellow-custom {
+  background-color: #DCB93E; /* Yellow for "Close" button */
+  color: white;
+}
+
+.ReactModal__Content .comment-container {
+  margin-top: 1rem;
+}
+
+.ReactModal__Content .comment-container div {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ReactModal__Content .comment-container .comment-header {
+  font-weight: bold;
+}
+
+.ReactModal__Content .comment-container .comment-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 0.5rem;
+}
+
+.ReactModal__Content .comment-container .comment-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.ReactModal__Content .comment-container .comment-actions button.bg-green-custom {
+  color: #8FC63F; /* Green for like button */
+}
+
+.ReactModal__Content .comment-container .comment-actions button.bg-yellow-custom {
+  color: #DCB93E; /* Yellow for share button */
+}
+
+.ReactModal__Content .comment-container img {
+  width: 32px; /* Size of avatar */
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+/* Delete confirmation modal styles */
+.ReactModal__Content.confirm-delete-modal {
+  max-width: 400px;
+  padding: 20px;
+}
+
+.ReactModal__Content.confirm-delete-modal h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.ReactModal__Content.confirm-delete-modal button {
+  padding: 10px 20px;
+}
+
+.ReactModal__Content.confirm-delete-modal .btn-confirm {
+  background-color: #DCB93E; /* Yellow for confirm button */
+  color: white;
+}
+
+.ReactModal__Content.confirm-delete-modal .btn-cancel {
+  background-color: #F1F4EC; /* Light background for cancel button */
+  color: black;
+}
